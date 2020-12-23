@@ -154,18 +154,45 @@
 /**
  * TEVO Tarantula Custom PID Settings - Stock Hotend
  */
-#define  hot_Kp 9.84
-#define  hot_Ki 0.50
-#define  hot_Kd 48.17
+
+// Default values:
+// #define  hot_Kp 9.84
+// #define  hot_Ki 0.50
+// #define  hot_Kd 48.17
+
+// Old values from Repetier
+// #define  hot_Kp 16.1
+// #define  hot_Ki 0.76
+// #define  hot_Kd 85.73
+
+// Auto tune parameters
+#define  hot_Kp 20.16
+#define  hot_Ki 1.70
+#define  hot_Kd 59.86
+
 // FIND YOUR OWN: "M303 E0 C8 S200" to run autotune on the hotend at 200 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
 /**
  * TEVO Tarantula Custom PID Settings - Stock Heatbed
  */
-#define  bed_Kp 984.88
-#define  bed_Ki 193.91
-#define  bed_Kd 1250.55
+
+// Default values:
+// #define  bed_Kp 984.88
+// #define  bed_Ki 193.91
+// #define  bed_Kd 1250.55
+
+// Old values from Repetier
+// #define  bed_Kp 533.12
+// #define  bed_Ki 101.62
+// #define  bed_Kd 698.78
+
+// Auto tune parameters
+#define  bed_Kp 145.13
+#define  bed_Ki 27.26
+#define  bed_Kd 515.18
+
+
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 // More info here: http://reprap.org/wiki/PID_Tuning
 
