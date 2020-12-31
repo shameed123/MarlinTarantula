@@ -1102,13 +1102,14 @@
 
 /**
  * Default Max Feed Rate (mm/s)
- * Override with M203
+ * Override with M2 03
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 #if ENABLED(DUAL_EXTRUDER)
   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 7, 50, 50 }
 #else
-  #define DEFAULT_MAX_FEEDRATE          { 300, 300, 7, 50 }
+//   #define DEFAULT_MAX_FEEDRATE          { 300, 300, 7, 50 }
+  #define DEFAULT_MAX_FEEDRATE          { 300, 300, 15, 50 }
 #endif
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
@@ -1385,7 +1386,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-#define MULTIPLE_PROBING 2
+// #define MULTIPLE_PROBING 2
 //#define EXTRA_PROBING    1
 
 /**
@@ -1896,8 +1897,8 @@
 #endif
 
 // Homing speeds (mm/min)
-// #define HOMING_FEEDRATE_XY (50*60)
-#define HOMING_FEEDRATE_XY (100*60)
+#define HOMING_FEEDRATE_XY (50*60)
+// #define HOMING_FEEDRATE_XY (100*60)
 // #define HOMING_FEEDRATE_Z  (10*60)
 #define HOMING_FEEDRATE_Z  (500*60)
 
