@@ -107,7 +107,7 @@
 #define SENSOR_FRONT       46
 #define SENSOR_BEHIND      0
 
-#define SENSOR_DOWN        -1.70
+#define SENSOR_DOWN        -2.20
 
 /**
  * Number of grid points in each direction
